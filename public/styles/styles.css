@@ -1,0 +1,71 @@
+body {
+    font-size: 16px;
+    font-family: 'Raleway', sans-serif;
+    
+}
+
+/*Background image styles*/
+.background {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+    overflow: hidden;
+    background-repeat: no-repeat;
+}
+
+/*Hero styles*/
+
+/*infoContainer styles*/
+.infoContainer {
+    position: relative;
+    top: 5em;
+    right: 5em;
+    font-size: 27px;
+    text-align: justify;
+}
+
+
+.homeImage {
+    position: relative;
+    top: -18em;
+    left: 35em;
+}
+
+.btn-grad {
+    width: 10em;
+    height: 3em;
+    text-align: center;
+    border-radius: 50px;
+    border: none;
+    box-shadow: 0 2px 4px -1px rgba(0,0,0,0.06), 0 4px 5px 0 rgba(0,0,0,0.06), 0 1px 10px 0 rgba(0,0,0,0.08);
+    margin: 10px 0px;    
+    background-size: 200% auto;
+    color: white;
+    background-image: linear-gradient(to right, #FF4E50 0%, #F9B233 51%,     #FF4E50 100%);
+    transition: 0.5s;
+  }
+  .btn-grad:hover { background-position: right center; }
+
+
+/*About us Section   amarillo: rgb(255,192,92); naranja: rgb(255,161,91)*/
+
+.AboutUs {
+    position: relative;
+    top: -12em;
+}
+
+.AboutUsInfo, .servicesInfo {
+    font-size: 18px;
+}
+
+.Partners{
+    background-color:rgb(255,192,92);
+    height: 15em;
+    padding: 2em;
+}
+
+.valuesListElement, .objectivesList, .programmList, .programmInfoList {
+    list-style: none;
+    font-size: 18px;
+}

@@ -1,0 +1,86 @@
+#mainNav {
+    min-height: 56px;
+    background-color: rgb(255, 255, 255);
+}
+
+#mainNav .navbar-toggler {
+	font-size: 1.75em;
+    padding: 0.75rem;
+    color: black;
+	border: none;
+}
+#mainNav .navbar-brand {
+	color: black;
+	padding: .9rem 0;
+}
+#mainNav .nav-link {
+    border-bottom: 0.25rem solid transparent;
+    color: black;
+}
+#mainNav .nav-link:hover {
+    color:  #c43737;
+}
+#mainNav.navbar-shrink .nav-link {
+    border-bottom: 0.25rem solid transparent;
+    color: black;
+}
+#mainNav.navbar-shrink .nav-link:hover {
+	color: #c43737;
+	outline: none;
+	background-color: transparent;
+}
+#mainNav.navbar-shrink {
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 2px 4px -1px rgba(0,0,0,0.06), 0 4px 5px 0 rgba(0,0,0,0.06), 0 1px 10px 0 rgba(0,0,0,0.08);
+}
+#mainNav .navbar-nav .nav-item:active, #mainNav .navbar-nav .nav-item:focus {
+	outline: none;
+    background-color: transparent;
+}
+
+@media (min-width: 992px) {
+	#mainNav {
+		min-height: 56px;
+        background-color: transparent;
+        transition: background-color 0.3s ease-in-out;
+        position: fixed; /* Make it stick/fixed */
+        top: -100px; /* Hide the navbar 50 px outside of the top view */
+        transition: top 0.3s; /* Transition effect when sliding down (and up) */
+	}
+	#mainNav .navbar-toggler {
+		font-size: 80%;
+		padding: 0.75rem;
+  	    color:  black;
+		border: 1px solid  #302E2E;
+	}
+	#mainNav .navbar-brand {
+		color: black;
+		padding: .9rem 0;
+	}
+	#mainNav .navbar-nav .nav-item:hover {
+		color: black;
+		outline: none;
+		background-color: transparent;
+	}
+	#mainNav.navbar-shrink {
+		background-color: rgb(255, 255, 255);
+		box-shadow: 0 2px 4px -1px rgba(0,0,0,0.06), 0 4px 5px 0 rgba(0,0,0,0.06), 0 1px 10px 0 rgba(0,0,0,0.08);
+	}
+	#mainNav.navbar-shrink .nav-link {
+        border-bottom: 0.25rem solid transparent;
+        color: black;
+	}
+	#mainNav.navbar-shrink .nav-link:hover {
+		color:  #c43737;
+	}
+	#mainNav.navbar-shrink .nav-link:active {
+		color:  #ffffff;
+	}
+	#mainNav.navbar-shrink .nav-link.active {
+		color: #ffffff;
+		outline: none;
+		border-bottom: 0.25rem solid  #302E2E;
+	}
+}
+
+
